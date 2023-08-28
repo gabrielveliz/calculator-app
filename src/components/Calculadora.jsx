@@ -1,6 +1,14 @@
 import '../styles/Calculadora.css';
+import data from "../data.json";
 
 function Calculadora(){
+  /*buscar como usar prefers-color-scheme*/ 
+  const cambiar = () =>{
+
+    document.getElementById("contenedorgeneral").setAttribute('data-theme', "tres");
+
+  }
+
   return(
     <div className='contenedor'>
       <div className='concal' >
@@ -24,39 +32,35 @@ function Calculadora(){
           <span>{/*aqui ira el resultado*/ } ejemplo</span>
         </div>
         <div className='contbotones'>
-          {/*botones*/ }
-          <div className='filabot'>
-            <div><span>7</span></div>
-            <div><span>8</span></div>
-            <div><span>9</span></div>
-            <div><span>DEL</span></div>
-          </div>
-          <div className='filabot'>
-            <div><span>4</span></div>
-            <div><span>5</span></div>
-            <div><span>6</span></div>
-            <div><span>+</span></div>
-          </div>
-          <div className='filabot'>
-            <div><span>1</span></div>
-            <div><span>2</span></div>
-            <div><span>3</span></div>
-            <div><span>-</span></div>
-          </div>
-          <div className='filabot'>
-            <div><span>.</span></div>
-            <div><span>0</span></div>
-            <div><span>/</span></div>
-            <div><span>x</span></div>
-          </div>
-          <div className='filabot'>
-            <div className='rese'><span>RESET</span></div>
-            <div className='equal'><span>=</span></div>
-          </div>
+          
+          {/*botones*/
+        data.map((data, index) => 
+        (   
+          <Botones 
+          key={index}
+          simbolo ={data.sim}
+          fun ={data.fun}
+          />
+        ))}
         </div>
+        
       </div>
     </div>
   );
+
+  
+}
+
+
+
+function Botones({simbolo,fun}){
+    return(
+      <button className={fun} >
+        <span>{simbolo}</span>
+      </button>
+    );
+  
+
 }
 
 export default Calculadora;
