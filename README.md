@@ -1,7 +1,7 @@
 # "calculator-app" 
 Reto de frontendmentor desarrollado en React
 
-## live
+## Live
 https://calculator-app-sepia-ten.vercel.app/
 
 ## Screenshot
