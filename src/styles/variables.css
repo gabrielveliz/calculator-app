@@ -1,3 +1,9 @@
+/*En esta hoja estan las variables para los temas 
+y tambien el "prefers-color-scheme" que se pide para el reto de frontendmentor*/
+
+/*In this sheet are the variables for the themes
+and also the "prefers-color-scheme" is requested for the frontendmentor challenge.*/
+
 :root{
   
   --backgeneral:hsl(222, 26%, 31%);
@@ -21,8 +27,98 @@
   --botongen:hsl(30, 25%, 89%);
   --sombotongen:hsl(28, 16%, 65%);
   --actbotongen:hsl(36, 26%, 96%);
+
+  --letfooter:hsl(225, 30%, 75%);
+  --actfooter:hsl(0, 0%, 100%);
+}
+@media (prefers-color-scheme: dark) {
+  :root{
+    --backgeneral:hsl(268, 75%, 9%);
+    --backcalc:hsl(268, 71%, 12%);
+    --backpant:hsl(268, 71%, 12%);
+  
+    --letgeneral:hsl(52, 100%, 62%);
+    --letbotgen:hsl(52, 100%, 62%);
+  
+    --botresdel:hsl(281, 89%, 26%);
+    --somresdel:hsl(285, 91%, 52%);
+    --actbotresdel:hsl(281, 40%, 52%);
+    --letbotresdel:hsl(0, 0%, 100%);
+  
+  
+    --bottogl:hsl(176, 100%, 44%);
+    --sombottogl:hsl(177, 92%, 70%);
+    --actbottogl:hsl(176, 99%, 56%);
+    --letbottogl:hsl(198, 20%, 13%);
+  
+    --botongen:hsl(268, 47%, 21%);
+    --sombotongen:hsl(290, 70%, 36%);
+    --actbotongen:hsl(268, 49%, 38%);
+
+    --letfooter:hsl(0, 0%, 100%);
+    --actfooter:hsl(290, 100%, 69%);
+  }
+  #bola3{
+    opacity: 1;
+  }
 }
 
+@media (prefers-color-scheme: light) {
+  :root{
+      --backgeneral:hsl(0, 0%, 90%);
+      --backcalc:hsl(0, 5%, 81%);
+      --backpant:hsl(0, 0%, 93%);
+    
+      --letgeneral:hsl(60, 10%, 19%);
+      --letbotgen:hsl(221, 14%, 31%);
+    
+      --botresdel:hsl(185, 42%, 37%);
+      --somresdel:hsl(185, 58%, 25%);
+      --actbotresdel:hsl(185, 35%, 55%);
+      --letbotresdel:hsl(0, 0%, 100%);
+    
+    
+      --bottogl:hsl(25, 98%, 40%);
+      --sombottogl:hsl(25, 99%, 27%);
+      --actbottogl:hsl(25, 80%, 56%);
+      --letbottogl:hsl(0, 0%, 100%);
+    
+      --botongen:hsl(45, 7%, 89%);
+      --sombotongen:hsl(35, 11%, 61%);
+      --actbotongen:hsl(36, 26%, 96%);
+  }
+  #bola2{
+    opacity: 1;
+  }
+}
+
+[data-theme='uno']{
+  
+  --backgeneral:hsl(222, 26%, 31%);
+  --backcalc:hsl(223, 31%, 20%);
+  --backpant:hsl(224, 36%, 15%);
+
+  --letgeneral:hsl(0, 0%, 100%);;
+  --letbotgen:hsl(221, 14%, 31%);
+
+  --botresdel:hsl(225, 21%, 49%);
+  --somresdel:hsl(224, 28%, 35%);
+  --actbotresdel:hsl(225, 33%, 72%);
+  --letbotresdel:hsl(0, 0%, 100%);
+
+
+  --bottogl:hsl(6, 63%, 50%);
+  --sombottogl:hsl(6, 70%, 34%);
+  --actbottogl:hsl(21, 63%, 50%);
+  --letbottogl:hsl(0, 0%, 100%);
+
+  --botongen:hsl(30, 25%, 89%);
+  --sombotongen:hsl(28, 16%, 65%);
+  --actbotongen:hsl(36, 26%, 96%);
+
+  --letfooter:hsl(225, 30%, 75%);
+  --actfooter:hsl(0, 0%, 100%);
+}
 [data-theme='dos']{
   --backgeneral:hsl(0, 0%, 90%);
   --backcalc:hsl(0, 5%, 81%);
@@ -45,6 +141,10 @@
   --botongen:hsl(45, 7%, 89%);
   --sombotongen:hsl(35, 11%, 61%);
   --actbotongen:hsl(36, 26%, 96%);
+
+  --letfooter:hsl(221, 14%, 31%);
+  --actfooter:hsl(25, 80%, 56%);
+
 }
 
 [data-theme='tres']{
@@ -69,4 +169,8 @@
   --botongen:hsl(268, 47%, 21%);
   --sombotongen:hsl(290, 70%, 36%);
   --actbotongen:hsl(268, 49%, 38%);
+
+  --letfooter:hsl(0, 0%, 100%);
+  --actfooter:hsl(290, 100%, 69%);
 }
+

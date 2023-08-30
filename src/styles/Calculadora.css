@@ -53,8 +53,23 @@ span{
 
 .contenedor{
   display: flex;
-  padding: 2rem 0rem;
-  
+  padding: 8rem 0rem;
+}
+/*tablet*/
+@media (max-width:800px){
+  .contenedor{
+    display: flex;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+}
+/*mobile*/
+@media (max-width:500px){
+  .contenedor{
+    display: flex;
+    padding-top: 0rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .concal{
@@ -63,12 +78,13 @@ span{
   margin-top: 4rem;
   margin-bottom: 4rem;
   max-width: 52rem;
+  min-width: 42rem;
 
 }
 /*tablet*/
 @media (max-width:800px){
   .concal{
-    
+    min-width: 20rem;
     width: 70%;
   }
 }
@@ -76,6 +92,7 @@ span{
 @media (max-width:500px){
   .concal{
     width: 90%;
+    min-width: 10rem;
   }
 }
 .superior{
@@ -110,13 +127,18 @@ span{
   border-radius: 2rem;
   width: 6rem;
   padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 0.35rem;
 }
 .bola{
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 10rem;
   cursor: pointer;
+  opacity: 0;
 }
+
 .pantalla{
 
   margin-top: 2rem;
