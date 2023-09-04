@@ -1,4 +1,3 @@
-React
 # "calculator-app" 
 Reto de frontendmentor desarrollado en React
 
